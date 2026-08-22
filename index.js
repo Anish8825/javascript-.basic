@@ -69,9 +69,16 @@ username = window.prompt("What is your username");
 
 console.log(username);
 */
+let username;
 
-document.getElementById("mysubmit").onclick = function () {
-    username = document.getElementById("mytext").value;
-    console.log(username);
-    
+document.getElementById("mysubmit").onclick = function(){
+  username = document.getElementById("mytext").value;
+  document.getElementById("myuu").textContent = `Hello ${username}`;
 }
+//------------------------------------------------------------//
+
+let age = window.prompt("How old are you?");
+
+age+=1;
+
+console.log(age);
