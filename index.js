@@ -135,3 +135,67 @@ resetBtn.onclick = function(){
   countLabel.textContent = count;
 }
 */
+
+//-------------------------------------------------------------//
+
+/*math = built-in objects that provides a collection
+of properties*/
+
+/*
+console.log(Math.PI);
+console.log(Math.E)*/
+/*
+let x = 3;
+let y = 2; //assigning values to variables
+let z;*/
+
+/*
+z = Math.round(x);//round value
+z = Math.floor(x);//floor value
+z = Math.ceil(x);//ceil value
+z = Math.trunc(x);//truncate value
+z = Math.pow(x,y);//power value
+z = Math.sqrt(x);//square root value   //Math function types with assigned values//
+z = Math.log(x);//logarithm value
+z = Math.sin(x);//log table value
+z = Math.abs(x);//absolute value
+z = Math.sign(x);//sign value
+z = Math.min(x,y);//minimum value
+z = Math.max(x,y);//maximum value
+
+
+console.log(z);
+*/
+/*
+const min = 50;
+const max = 100;
+
+let randomnum = Math.floor(Math.random() * (max - min + 1)) + min;
+
+console.log(randomnum);
+*/
+//---------------------------------------------------------------//
+
+/*
+const myButton = document.getElementById("myButton");
+
+const Label1 = document.getElementById("Label1");
+const Label2 = document.getElementById("Label2");
+const Label3 = document.getElementById("Label3");
+
+const min = 1;
+const max = 6;
+
+myButton.onclick = function () {
+
+    let randomNum1 = Math.floor(Math.random() * (max - min + 1)) + min;
+    let randomNum2 = Math.floor(Math.random() * (max - min + 1)) + min;
+    let randomNum3 = Math.floor(Math.random() * (max - min + 1)) + min;
+
+    Label1.textContent = randomNum1;
+    Label2.textContent = randomNum2;
+    Label3.textContent = randomNum3;
+};
+*/
+
+//---------------------------------------------------------------------//
