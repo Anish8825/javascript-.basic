@@ -176,7 +176,8 @@ console.log(randomnum);
 */
 //---------------------------------------------------------------//
 
-
+//Random number generator//
+/*
 const myButton = document.getElementById("myButton");
 const myLabel = document.getElementById("myLabel");
 const min = 1;
@@ -187,6 +188,82 @@ myButton.onclick = function () {
     randomNum = Math.floor(Math.random() * max) + min;
     myLabel.textContent = randomNum;
 };
+*/
+//-------------------------------------------------------------//
 
+// IF STATEMENTS : if a condition is true, then a block of code will be executed
+//                 if not , do somenting else
 
-//---------------------------------------------------------------------//
+/*example  
+  let age = 2;
+  if (age >= 18){
+    console.log("You are an adult");
+  }
+  else{
+    console.log("You are a minor");
+  }
+*/
+//for boolean example
+
+/*
+let isstudent = false;
+
+if(isstudent){
+  console.log("You are a student");
+}
+else{
+  console.log("You are not a student");
+}
+*/
+
+//------------------------//
+//assignment//
+//Example: Create a program that asks the user for their age and displays a message indicating whether they are an adult or a minor.//
+/*
+const myText = document.getElementById("mytext");
+const mySubmit = document.getElementById("mysubmit");
+const resultElement = document.getElementById("resultElement");
+
+mySubmit.onclick = function () {
+    const age = parseInt(myText.value);
+    if (age >= 18) {
+        resultElement.textContent = "You are an adult.";
+    } else {
+        resultElement.textContent = "You are a minor.";
+    }
+};
+*/
+//-------------------------------------------------------------//
+
+//This is an assignment to check the people who are kids, adults, middle aged & old//
+/*
+
+const myText = document.getElementById("mytext");
+const mySubmit = document.getElementById("mysubmit");
+const resultElement = document.getElementById("resultElement");
+let age;
+
+mySubmit.onclick = function () {
+    let age = myText.value;
+    age = Number(age);
+
+    if (age < 0) {
+        resultElement.textContent = "Your age can't be below 0";
+    }
+    else if (age === 0) {
+        resultElement.textContent = "You can't enter the website. You are a kid";
+    }
+    else if (age >= 100) {
+        resultElement.textContent = "You are too OLD";
+    }
+    else if (age >= 18) {
+        resultElement.textContent = "You are old enough to enter this website";
+    }
+    else {
+        resultElement.textContent = "You must be 18+ to enter this website";
+    }
+};
+
+*/
+
+//----------------------------------------------------------------------------------------//
