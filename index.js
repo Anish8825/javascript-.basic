@@ -176,26 +176,17 @@ console.log(randomnum);
 */
 //---------------------------------------------------------------//
 
-/*
+
 const myButton = document.getElementById("myButton");
-
-const Label1 = document.getElementById("Label1");
-const Label2 = document.getElementById("Label2");
-const Label3 = document.getElementById("Label3");
-
+const myLabel = document.getElementById("myLabel");
 const min = 1;
 const max = 6;
+let randomNum;
 
 myButton.onclick = function () {
-
-    let randomNum1 = Math.floor(Math.random() * (max - min + 1)) + min;
-    let randomNum2 = Math.floor(Math.random() * (max - min + 1)) + min;
-    let randomNum3 = Math.floor(Math.random() * (max - min + 1)) + min;
-
-    Label1.textContent = randomNum1;
-    Label2.textContent = randomNum2;
-    Label3.textContent = randomNum3;
+    randomNum = Math.floor(Math.random() * max) + min;
+    myLabel.textContent = randomNum;
 };
-*/
+
 
 //---------------------------------------------------------------------//
