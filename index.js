@@ -370,8 +370,7 @@ switch(day){
 //TRY THIS : Examine a test score if score is 
 //high output should be good middle score average low score poor
 //ANSWER:
-/*
-let score = 92;
+/*let score = 92;
 let lettergrade;
 
 switch(true){
@@ -386,4 +385,75 @@ switch(true){
     break;
 }
 console.log(lettergrade);
+*/
+
+//--------------------------------------------------------------------//
+
+//STRING METHOD = Allows to manipulate and work with text(string)//
+/*
+let username = "rammu   ";
+
+console.log(username.charAt(0)); //charAt metod//
+
+console.log(username.indexOf("a")); //indexOf method//
+
+console.log(username.length); //length of the string//
+
+username = username.trim();  //used to clear whitespace//
+
+username = username.toUpperCase(); //used capatalise string// 
+console.log(username);
+
+let user = "RAJu";
+user = user.toLowerCase(); //used for small letter in string//
+console.log(user);
+
+user = user.repeat(3); //Repeats string//
+console.log(user);
+
+let rocket = "rakki";
+let result = rocket.startsWith("r"); //Checks the start value and says true or false //
+console.log(result);
+
+let roc = "rakki";
+let resul = roc.endsWith("r"); //Checks the end value and says true or false //
+console.log(result);
+
+let ro = "rakki";
+let resu = ro.endsWith("r"); //Checks the string contains the value and says true or false //
+console.log(result);
+
+let number = "123-876-098";
+number = number.replace("-","/");//Used to replace values in the string//
+console.log(number);
+
+let num = "12345678";
+num = num.padStart(15,1); //Used to add value in the front of the string//
+console.log(num);
+
+let no = "123457789999";
+no = no.padEnd(20,0);  //Used to enter the value at the end of the string//
+console.log(no);
+*/
+
+// STRING SLICING//
+/*
+const fullname = "Anish kumar";
+
+firstname = fullname.slice(0,1);
+secondname = fullname.slice(6,7); .//Slice operator is used to slice an operator//
+console.log(firstname);
+console.log(secondname);
+*/
+
+//Example : like this create an slicing program for email 
+//          anishmurthi@gamil.com anishmurthi separately and gmail.com separately
+/*ANSWER:
+const email = "anishmurthi@gmail.com"
+
+let username = email.slice(0,email.indexOf("@"));
+let extension = email.slice(email.indexOf("@")+1);
+
+console.log(username);
+console.log(extension);
 */
