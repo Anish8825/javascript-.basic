@@ -267,3 +267,123 @@ mySubmit.onclick = function () {
 */
 
 //----------------------------------------------------------------------------------------//
+
+//.Checked = property that detrmines the checked ststes of an 
+//            HMTL checkbox or radio button element
+/*
+const myCheckBox = document.getElementById("myCheckBox");
+const visaBtn = document.getElementById("visaBtn");
+const masterCardBtn = document.getElementById("masterCardBtn");
+const payPalBtn = document.getElementById("payPalBtn");
+const mySubmit = document.getElementById("mySubmit");
+const subResult = document.getElementById("subResult");
+const paymentResult = document.getElementById("paymentResult");
+
+mySubmit.onclick = function() {
+
+  if (myCheckBox.checked) {
+    subResult.textContent = `You are SUBSCRIBED!`;
+  }
+  else {
+    subResult.textContent = `You are NOT SUBSCRIBED!`;
+  }
+  if(visaBtn.checked) {
+    paymentResult.textContent = `you are paying with VISA!`;
+  }
+  else if(masterCardBtn.checked) {
+    paymentResult.textContent = `you are paying with MASTERCARD`;
+  }
+  else if(payPalBtn.cheked) {
+    paymentResult.textContent = `you are paying with PayPal!`;
+  }
+  else {
+    paymentResult.textContent = `you must select a payment method...!`
+  }
+}
+*/
+
+
+// ---------------------------------------------------------------------//
+//TERNARY OPERATOR = A shortcut to if{} and else{} statements
+//                   helps to assign variable based on a condition
+//                   example: condition ? codeIFTrue : codeIFFalse;
+
+
+//Examples for terninary operator
+
+//let age = 28;
+//let message = age >= 18 ? "you are an adult" : "you are not an adult";
+//console.log(message);
+
+//let time = 18;
+//let greeting = time < 12 ? "good morning" : "good afternoon";
+//console.log(greeting);
+
+//let student = true;
+//let message = student ? "you are a student" : "you are not a student"; //THIS IS FOR BOOLEAN //
+//console.log(message);
+
+//try this question: if you purchase greater than 100$ you have a 10% discount else no discount//
+//ANSWER:
+//let purchaseamount = 99;
+//let discount = purchaseamount >= 100 ? 10 : 0;
+//console.log(`your total is $${purchaseamount - purchaseamount * (discount/100)}`);
+
+//---------------------------------------------------------------------------------------//
+
+//SWITCH = It is used to replace to many else if statements//
+
+//Example : weekdays//
+/*
+let day = 0;
+
+switch(day){
+  case 1:
+    console.log("MONDAY!");
+    break;
+  case 2:
+    console.log("TUESDAY!");
+    break;
+  case 3:
+    console.log("WEDNESDAY!");
+    break;
+  case 4:
+    console.log("THURSDAY!");
+    break;
+  case 5:
+    console.log("FRIDAY!");
+    break;
+  case 6:
+    console.log("SATURDAY!");
+    break;
+  case 7:
+    console.log("SUNDAY!");
+    break;
+  default:
+    console.log(`${day} is not a day`);
+}
+//Enter the day
+//It runs through the cases
+//Checks cases and gives the output
+//The break statement is used to stop after a output case found, else it jumps to next case 
+*/
+//TRY THIS : Examine a test score if score is 
+//high output should be good middle score average low score poor
+//ANSWER:
+/*
+let score = 92;
+let lettergrade;
+
+switch(true){
+  case score >= 90:
+    lettergrade = "GOOD!!";
+    break;
+  case score >= 50:
+    lettergrade = "AVERAGE--";
+    break;
+  case score <= 40:
+    lettergrade = "POOR(learn well...)";
+    break;
+}
+console.log(lettergrade);
+*/
