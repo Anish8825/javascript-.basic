@@ -490,3 +490,46 @@ console.log(username);
 */
 
 //---------------------------------------------------------------------------//
+
+//LOICAL OPERATOR = Used to combine or manipulate boolean values(TRUE or FALSE)
+//OPERATORS ARE --- AND-&& , OR-|| , NOT-!
+
+//AND OPERATOR = If both values are true then the command is executed 
+//Example: TEMPERATURE
+/*
+const temp = -100;
+
+if(temp > 0 && temp <= 30){
+  console.log("The weather is GOOD!..");
+}
+else{
+  console.log("The weather is BAD!..");
+}
+*/
+
+//OR OPERATOR = If any one value in the command is true
+//               then the command is executed
+/*
+const temp = 1;
+
+if(temp <= 0 || temp > 30){
+  console.log("The weather is BAD!..");
+}
+else{
+  console.log("The weather is GOOD!..");
+}
+*/
+
+//NOT OPERATOR = It is an single operator used to invert the truth value in an expression
+/*
+const issunny = true;
+
+if(!issunny){
+  console.log("The weather is CLOUDY!..");
+}
+else{
+  console.log("The weather is SUNNY!..");
+}
+*/
+
+//-------------------------------------------------------------------------------------//
