@@ -457,3 +457,36 @@ let extension = email.slice(email.indexOf("@")+1);
 console.log(username);
 console.log(extension);
 */
+
+//--------------------------------------------------------------------------//
+
+//METHOD CHANGIN = Calling one method after another
+//                 in one continuous line of code
+
+//----------NO METHOD CHANING-----------//
+/*
+let username = window.prompt("Enter your user name:");
+
+username = username.trim();
+let letter = username.charAt(0);
+letter = letter.toUpperCase();        //METHODS ARE NOT COMBINED TOGETHER//
+
+let extrachars = username.slice(1);
+extrachars = extrachars.toLowerCase();
+username = letter + extrachars;
+
+console.log(username);
+*/
+
+
+//---------METHOD CHANGING------------//
+/*
+username = window.prompt("Enter your username:");
+
+username = username.trim().charAt(0).toUpperCase() + username.trim().slice(1).toLowerCase();
+                  --------------------------------------------------------------------------
+                        //METHODS ARE COMBINED TOGETHER//
+console.log(username);
+*/
+
+//---------------------------------------------------------------------------//
