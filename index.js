@@ -533,3 +533,49 @@ else{
 */
 
 //-------------------------------------------------------------------------------------//
+
+// = assignment operator//
+// == comparison operator (compares if values are equal)
+// === equality operator (compares equal values & datatypes are equal)
+// != inequality operator
+// !== strict inequality
+/*
+const PI = 3.14; // here '=' is assignment operator
+
+if(PI == 3.14){  //here '==' is comparison operator
+  console.log("that is PI");
+}
+else{
+  console.log("That is NOT PI");
+}
+*/
+/*
+const PI = 3.14; // here '=' is assignment operator
+
+if(PI == 3.14){  //here '===' is equality operator
+  console.log("that is PI");
+}
+else{
+  console.log("That is NOT PI");
+}
+*/
+/*
+const PI = 3.14; // here '=' is assignment operator
+
+if(PI != 3.14){  //here '!=' is inequality operator
+  console.log("that is PI");
+}
+else{
+  console.log("That is NOT PI");
+}
+*/
+/*
+const PI = 3.14; // here '=' is assignment operator
+
+if(PI !== 3.14){  //here '==' is comparison operator
+  console.log("that is PI");
+}
+else{
+  console.log("That is NOT PI");
+}
+*/
