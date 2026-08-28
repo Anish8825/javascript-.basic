@@ -534,6 +534,7 @@ else{
 
 //-------------------------------------------------------------------------------------//
 
+//STRICT EQUALITY OPERATORS//
 // = assignment operator//
 // == comparison operator (compares if values are equal)
 // === equality operator (compares equal values & datatypes are equal)
@@ -578,4 +579,17 @@ if(PI !== 3.14){  //here '==' is comparison operator
 else{
   console.log("That is NOT PI");
 }
+*/
+
+//-------------------------------------------------------------------------------//
+
+//WHILE LOOP//
+//While loop = repeat some code WHILE some condition is true
+/*
+let username = "";
+
+while(username === ""){
+  console.log("you didn't enter your name");
+}
+console.log(`HELLO ${username}`);
 */
