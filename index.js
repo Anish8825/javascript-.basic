@@ -719,3 +719,40 @@ while(running){
 
 }
 */
+//--------------------------------------------------------------------------//
+
+//FUNCTION = 
+          //A section of reusable code and declare code, use it whenever you want.
+          //call the function to execute that code.
+
+//EXAMPLE : calculations
+/*
+function add(x,y){
+  return x + y;
+}
+function subtract(x,y){
+  return x - y;
+}
+function multiply(x,y){
+  return x * y;
+}
+function divide(x,y){
+  return x / y;
+}
+console.log(add(5,3));
+console.log(subtract(5,3));
+console.log(multiply(5,3));
+console.log(divide(5,3));
+*/
+//ANOTHER EXAMPLE : odd or even
+/*
+function isEven(number){
+  if(number % 2 === 0){
+    return true;
+  }
+  else{
+    return false;
+  }
+}
+console.log(isEven(100));
+*/
