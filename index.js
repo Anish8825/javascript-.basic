@@ -755,4 +755,29 @@ function isEven(number){
   }
 }
 console.log(isEven(100));
-*/
+*//*
+function validmail(email){
+  if(email.includes("@")){
+    return true;
+  }
+  else{
+    return false;
+  }
+}
+console.log(validmail("anish@"));*/
+
+//------------------------------------------------------------------//
+
+//VARIABLE SCOPE = 
+                  //Where a variable is recognized and accessible (local or global)
+/* //EXAMPLE:
+function1();
+function function1(){
+  let x = 1;
+  console.log(x);
+}
+function function2(){
+  let x = 2;
+  console.log(x);
+}*/
+
