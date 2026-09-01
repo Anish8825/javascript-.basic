@@ -834,3 +834,37 @@ for (let i = fruits.length - 1; i >= 0; i--){
   console.log(fruits[i]);
 }
 */
+/*
+let fruits = ["apple", "banana", "orange", "grapes"];  //SORTING THE ARRAY//
+fruits.sort();
+for (fruits of fruits){
+  console.log(fruits);
+}
+*/
+
+//---------------------------------------------------------------------------------------------------------//
+
+//SPREAD OPERATOR = ... allows an iterable such as an array or string
+//                  to be expanded into separate arguments in function
+//                  calls or elements in array literals
+/*
+let numbers = [1, 2, 3, 4, 5];
+let max = Math.max(...numbers);
+let min = Math.min(...numbers);
+
+console.log(min);
+console.log(max); 
+*/
+
+//EXAMPLE:
+/*
+let username = "Anish kumar";
+let letter = [...username].join("-");
+
+console.log(letter); */
+/*
+let fruits = ["apple","orange","banana"];
+let newfruits = [...fruits];
+
+console.log(newfruits);
+*/
