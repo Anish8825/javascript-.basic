@@ -807,3 +807,30 @@ function convert(){
   }
 }
 */
+
+//-------------------------------------------------------------------------------------------------------//
+
+//ARRAY = A variable that can only hold more than 1 value
+/*
+let fruits = ["apple", "banana", "orange", "grapes"];
+
+fruits[0] = "mango"; //replacing the value of the array//
+console.log(fruits[0]);
+console.log(fruits.length); //length of the array//
+console.log(fruits[fruits.length - 1]); //last value of the array//
+*/
+
+//EXAMPLE :
+/*let fruits = ["apple", "banana", "orange", "grapes"];
+
+ for (let i = 0; i < fruits.length; i++){
+  console.log(fruits[i]);
+ }
+*/
+/*
+let fruits = ["apple", "banana", "orange", "grapes"];  //REVERSE ORDER OF THE ARRAY//
+
+for (let i = fruits.length - 1; i >= 0; i--){
+  console.log(fruits[i]);
+}
+*/
