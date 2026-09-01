@@ -868,3 +868,66 @@ let newfruits = [...fruits];
 
 console.log(newfruits);
 */
+
+//-----------------------------------------------------------------------------------------------------------//
+
+//REST PARAMETERS = (...rest) allows a function work with a variable number 
+//                  of arguments by building them into an array
+//SPREAD = expands an array into individual elements
+//REST = bundles or collects separate elements into an array
+/*
+function openfridge(...foods){
+  console.log(...foods);
+}
+function getFood(...foods){
+  return foods;
+}
+
+const food1 = "pizza";
+const food2 = "burger";
+const food3 = "pasta";
+const food4 = "sandveg";
+
+//openfridge(food1, food2, food3, food4);
+
+const foods = getFood(food1, food2, food3, food4);
+
+console.log(foods);  */
+//EXAMPLE : REST PARAMETERS
+/*
+function sum(...numbers){
+  let result = 0;
+  for (let number of numbers){
+    result += number;
+  }
+  return result;
+}
+
+const total = sum(1, 2, 3, 4, 5);
+
+console.log(`YOUR TOTAL IS $${total}`);  */
+/*
+function getAverage(...numbers){
+  let result = 0;
+  for (let number of numbers){
+    result += number;
+  }
+  return result / numbers.length;
+}
+
+const total = getAverage(50,70,90,100);
+
+console.log(total);   */
+/*
+function combinestring(...strings){
+  return strings.join(" ");
+}
+
+const fullname = combinestring("MR.", "Anish","kumar","M");
+
+console.log(fullname)  */
+
+//==================================================================================================//
+
+//-------------DICE ROLLER PROGRAM-------------//
+
