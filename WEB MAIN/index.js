@@ -929,7 +929,7 @@ console.log(fullname)  */
 
 //==================================================================================================//
 
-//COLLBACK = A function that is passed as an argument to another 
+//CALLBACK = A function that is passed as an argument to another 
 //           function and is executed after some operation has been completed
 /*
 hello(wait);
