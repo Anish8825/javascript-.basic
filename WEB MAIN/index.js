@@ -931,6 +931,10 @@ console.log(fullname)  */
 
 //CALLBACK = A function that is passed as an argument to another 
 //           function and is executed after some operation has been completed
+
+//          1.)Reading a file
+//          2.)Making an HTTP request
+//          3.)Handling user input events
 /*
 hello(wait);
 
@@ -950,4 +954,116 @@ function leave(){
 function goodbye(){
   console.log("goodbye");
 } */
+
+//EXAMPLE:
+/*
+sum(displaypage, 1,2);
+
+function sum(callback, x, y){
+  let result = x + y;
+  callback(result);
+}
+
+function displaypage(result){
+  console.log(result);
+}
+
+function displaypage(result){
+  document.getElementById("myh1").textContent = result;
+}
+*/
 //======================================================================================================//
+
+//forEach = method used to iterate over the elements 
+//          of an array and apply a specified function
+//          to each element
+
+//          array.forEach(callback)
+//          element,index,array are provided
+
+//EXAMPLE:
+/*
+let numbers = [1, 2, 3, 4, 5];
+
+numbers.forEach(square);
+//numbers.forEach(triple);
+//numbers.forEach(double);
+numbers.forEach(display);
+
+function double(element, index, array){
+  array[index]= element * 2;      //doubled
+}
+
+function triple(element, index, array){
+  array[index]= element * 3;      //tripled
+}
+
+function square(element, index, array){
+  array[index]= Math.pow(element,3 )
+}
+function display(element){
+  console.log(element);
+
+} */
+/*
+let fruits = ["apple","banana","orange"];
+
+fruits.forEach(uppercase); //to show the element in uppercase
+fruits.forEach(display);
+
+function uppercase(element, index, array){
+   array[index] = element.toUpperCase();
+}
+function display(element){
+  console.log(element);
+} */
+
+//=====================================================================================================//
+
+//.map() = accepts a callback and applies that function
+//         to each element of an array, then returns a new array
+
+//EXAMPLE:
+/*
+const numbers = [1,2,3,4,5];
+const squares = numbers.map(square);
+
+console.log(squares);
+
+function square(element){
+  return Math.pow(element, 2)
+}     */
+/*
+const dates = ["2023-1-09","2006-02-12","2007-06-02"];
+const formattedDates = dates.map(formatdates);
+
+console.log(formattedDates);
+
+function formatdates(element){
+  const parts = element.split("-");
+  return `${parts[1]}/${parts[2]}/${parts[0]}`;
+}*/
+
+//=======================================================================================================//
+
+//.filter() = creates a new array by filtering
+//            out the old array elements
+//EXAMPLE:
+/*
+let numbers = [1,2,3,4,5,6,7,8];
+let evenNumbs = numbers.filter(isEven);
+
+console.log(evenNumbs);
+
+function isEven(element){
+  return element %2 === 0 ;
+} */
+
+const ages = [16,17,18,19,20];
+const adults = ages.filter(isadult);
+
+console.log(adults);
+
+function isadult(element){
+  return element >= 18;
+}
