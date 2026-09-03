@@ -1,5 +1,7 @@
 //variable = A container that stores values
 
+//const { useCallback } = require("react");
+
 // declaration let x ;
 // assigning the variable  x = 10;
 
@@ -1058,7 +1060,7 @@ console.log(evenNumbs);
 function isEven(element){
   return element %2 === 0 ;
 } */
-
+/*
 const ages = [16,17,18,19,20];
 const adults = ages.filter(isadult);
 
@@ -1066,4 +1068,74 @@ console.log(adults);
 
 function isadult(element){
   return element >= 18;
+}*/
+
+//======================================================================================================//
+
+//.reduce() = reduces the element of an array into a single value
+//            by applying a function to each element in the array
+/*
+const prices = [5,30,10,25,15,20];
+
+const total = prices.reduce(sum);
+
+console.log(`$${total.toFixed(2)}`);
+
+function sum(accumulator,element){
+  return accumulator + element;
+}   */
+
+//EXAMPLE:
+/*
+const grade = [75,50,90,80,65,95];
+
+const maximum = grade.reduce(getMax);
+
+console.log(maximum);
+
+function getMax(accumulator, element){
+  return Math.max(accumulator,element);
 }
+*/
+
+//==========================================================================================================//
+
+//function declaration = define a reusable block of code that performs a specific task
+/*
+function hello(){
+  console.log("HELLO!!!");
+}
+*/
+//function expression = a way to define function as values or variables
+/*
+const hello = function(){
+  console.log("Hello");
+}
+hello();    */
+
+//EXAMPLE:
+/*
+
+const numbers = [1,2,3,4,5,6];
+const square = numbers.map(function(element){
+  return Math.pow(element, 2);
+});
+const cubes = numbers.map(function(element){
+  return Math.pow(element, 3);
+});
+const evenNums = numbers.filter(function(element){
+  return element % 2 === 0;    // gives filtered array value
+});
+
+const evennums = numbers.map(function(element){
+  return element % 2 === 0;    // maps the value says true or false
+});
+
+const total = numbers.reduce(function(accumulator, element){
+  return accumulator + element;
+});
+console.log(evennums);
+console.log(evenNums);
+console.log(total);        */
+
+//=====================================================================================================//
