@@ -1169,3 +1169,46 @@ console.log(oddNumbs);
 console.log(total); */
 
 //=========================================================================================================//
+
+//objects = A collections of related properties and/or methods 
+//          can reoresent real world objects
+//          objects = {key:value,function()}
+
+/*
+
+const person1 = {
+  firstname: "Anish",
+  lastname: "Kumar",
+  age: 20,
+  isEmployed: false,
+  sayHello: function(){
+    console.log("HI! I'M ANISH KUMAR")},
+  eat: () => console.log("I LIKE EATING PIZZA")
+}
+
+const person2 = {
+  firstname: "abishek",
+  lastname: "playboy",
+  age: "21",
+  isEmployed: false,
+  sayHello: function(){
+    console.log("HEY! I'M SURAYA")},
+  eat: () => console.log("I LIKE DRINKING BEER!!!")
+}
+
+//console.log(person1.firstname);
+//console.log(person1.lastname);
+//console.log(person1.age);
+//console.log(person1.isEmployed);
+
+//console.log(person2.firstname);
+//console.log(person2.lastname);
+//console.log(person2.age);
+//console.log(person2.isEmployed);
+
+person1.sayHello();
+person2.sayHello();
+person1.eat();
+person2.eat();     */
+
+//=========================================================================================================//
