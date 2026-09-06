@@ -1404,4 +1404,55 @@ Tiger.kill();      */
 
 //===============================================================================================================//
 
+//super = Keyword is used in classes to call the constructor or access
+//        the properties and methods of a parent(superclass)
+//        this = this object
+//        super = the parent
+/*
+class Animal{
+  constructor(name,age){
+    this.name = name;
+    this.age = age;
+  }
 
+  move(speed){
+    console.log(`THE ${this.name} MOVES AT A SPEED OF ${speed}mph`);
+  }
+}
+class Fish extends Animal{
+   constructor(name,age,swimspeed){
+    super(name,age);
+    this.swimspeed = swimspeed;
+}
+   swim(){
+    console.log(`THIS ${this.name} CAN SWIM`);
+   }
+}
+class Bird extends Animal{
+  constructor(name,age,Flyspeed){
+    super(name,age);
+    this.Flyspeed = Flyspeed;
+  }
+  fly(){
+    console.log(`THIS ${this.name} CAN FLY`);
+  }
+}
+class animal extends Animal{
+  constructor(name,age,Runspeed){
+    super(name,age);
+    this.Runspeed = Runspeed;
+  }
+  run(){
+    console.log(`THIS ${this.name} CAN RUN`);
+  }
+}
+
+const fish = new Fish("GOLDFISH",5,12);
+const bird = new Bird("KINGFISHER",4,30);
+const animal1 = new animal("TIGER",6,60);
+
+fish.swim();
+bird.fly();
+animal1.run();  */
+
+//================================================================================================================//
