@@ -1293,3 +1293,60 @@ console.log(`TOTAL PRICE YOU PURCHASED IS : ${totalamount}`)  */
 
 //=====================================================================================================//
 
+//static = A static is a keyword that defines properties or methods
+//         that belong to a class itself raeter than the object created
+//         from that (class owns anything static ,not te objects)
+/*
+class MathUtil{
+  static PI = 3.14;
+
+  static getDiameter(radius){
+    return 2 * radius;
+  }
+
+  static getcircumference(radius){
+    return 2 * this.PI * radius;
+  }
+
+  static getArea(radius){
+    return this.PI * radius * radius;
+  }
+}
+
+console.log(MathUtil.PI);
+console.log(MathUtil.getDiameter(19));
+console.log(MathUtil.getcircumference(2));
+console.log(MathUtil.getArea(10));  */
+
+//EXAMPLE:
+/*
+class User{
+  
+  static usercount = 0;
+
+  constructor(username){
+    this.username = username;
+    User.usercount++;
+  }
+
+  static getusercount(){
+    console.log(`THERE ARE ${this.usercount} USER IN ONLINE`);
+  }
+
+  sayHello(){
+    console.log(`HELLO MY USERNAME IS ${this.username}`);
+  }
+}
+
+const user1 = new User("Anish");
+const user2 = new User("Kumar");
+
+console.log(user1.username);
+console.log(user2.username);
+
+user1.sayHello();
+user2.sayHello();
+
+User.getusercount();       */
+
+//===========================================================================================================//
