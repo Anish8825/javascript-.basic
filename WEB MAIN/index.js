@@ -1212,3 +1212,247 @@ person1.eat();
 person2.eat();     */ 
 
 //=========================================================================================================//
+
+//this = referance to the object where THIS is used
+//      (the object depends on the immediate context)
+//      person.name = this name
+//EXAMPLE:
+/*
+const person1 = {
+  name: "Anish",
+  age: "20",
+  favfood: "Pizza",
+  sayHello: function(){
+    console.log(`HI I'M ${this.name}`);
+    console.log(`MY AGE IS ${this.age}`);
+    console.log(`${this.name} FAV FOOD IS ${this.favfood}`);
+  } 
+}
+
+person1.sayHello();   */
+
+//==========================================================================================================//
+
+// constructor = special method for defining the 
+//               properties and methods of objects
+
+//EXAMPLE:
+/*
+function car (make,model,year,color){     //CONSTRUCTOR
+  this.make = make,               //
+  this.model = model,              //METHODS
+  this.year = year,                //
+  this.color = color             //
+  this.drive = function(){console.log(`I LIKE ${this.make} ${this.model} WITH COLOR ${this.color} AND IT'S YEAR IS ${this.year}`)}
+}
+
+const car1 = new car("FORD","MUSTANG","2020","BLUE");   //PROPERTIES
+
+console.log(car1.make);
+console.log(car1.model);
+console.log(car1.year);
+console.log(car1.color);    
+car1.drive(); */
+
+
+//=============================================================================================================//
+
+//classes = Provides a more structured and cleaner way to work
+//          with objects compared to traditional constructor functions 
+//          ex. static keyword,encapsulation,inheritance
+
+/*
+class product{
+  constructor(name, price){
+    this.name = name;
+    this.price = price;
+  }
+  displayProduct(){
+    console.log(`PRODUCT: ${this.name}`);
+    console.log(`PRICE: $${this.price.toFixed(2)}`);
+  }
+  calculateTotal(salesTax){
+    return this.price + (this.price * salesTax);
+  }
+}
+const salesTax = 0.05;
+
+const product1 = new product("SHIRT", 19.90);
+const product2 = new product("PANT", 25.10);
+
+product1.displayProduct();
+product2.displayProduct();
+
+const total = product1.calculateTotal(salesTax);
+const total1 = product2.calculateTotal(salesTax);
+const totalamount = total + total1;
+
+console.log(`SHIRT PRICE: ${total.toFixed(2)}`);   
+console.log(`PANT PRICE: ${total1.toFixed(2)}`);
+console.log(`TOTAL PRICE YOU PURCHASED IS : ${totalamount}`)  */
+
+//=====================================================================================================//
+
+//static = A static is a keyword that defines properties or methods
+//         that belong to a class itself raeter than the object created
+//         from that (class owns anything static ,not te objects)
+/*
+class MathUtil{
+  static PI = 3.14;
+
+  static getDiameter(radius){
+    return 2 * radius;
+  }
+
+  static getcircumference(radius){
+    return 2 * this.PI * radius;
+  }
+
+  static getArea(radius){
+    return this.PI * radius * radius;
+  }
+}
+
+console.log(MathUtil.PI);
+console.log(MathUtil.getDiameter(19));
+console.log(MathUtil.getcircumference(2));
+console.log(MathUtil.getArea(10));  */
+
+//EXAMPLE:
+/*
+class User{
+  
+  static usercount = 0;
+
+  constructor(username){
+    this.username = username;
+    User.usercount++;
+  }
+
+  static getusercount(){
+    console.log(`THERE ARE ${this.usercount} USER IN ONLINE`);
+  }
+
+  sayHello(){
+    console.log(`HELLO MY USERNAME IS ${this.username}`);
+  }
+}
+
+const user1 = new User("Anish");
+const user2 = new User("Kumar");
+
+console.log(user1.username);
+console.log(user2.username);
+
+user1.sayHello();
+user2.sayHello();
+
+User.getusercount();       */
+
+//===========================================================================================================//
+
+//inheritance = allows a new class to inherit properties and methods 
+//              from an existing class (parent - child)
+//              helps with code reusability
+/*
+class Animal{
+  alive = true;
+
+  eat(){
+    console.log(`THIS ${this.name} IS EATING`);
+  }
+  sleep(){
+    console.log(`THIS ${this.name} IS SLEEPING`);
+  }
+}
+
+class rabbit extends Animal{
+  name = "RABBIT";
+
+  run(){
+    console.log(`THIS ${this.name} IS RUNNING`);
+  }
+}
+class cat extends Animal{
+  name = "CAT";
+
+  jump(){
+    console.log(`THIS ${this.name} IS JUMPING`);
+  }
+}
+class tiger extends Animal{
+  name = "TIGER";
+
+  kill(){
+    console.log(`THIS ${this.name} IS KILLING ANIMALS`);
+  }
+}
+
+const Rabbit = new rabbit();
+const Cat = new cat();
+const Tiger = new tiger();
+
+console.log(Rabbit);
+Rabbit.eat();
+Rabbit.run()
+console.log(Cat);
+Cat.eat();
+Cat.jump();
+console.log(Tiger);
+Tiger.eat();
+Tiger.kill();      */
+
+//===============================================================================================================//
+
+//super = Keyword is used in classes to call the constructor or access
+//        the properties and methods of a parent(superclass)
+//        this = this object
+//        super = the parent
+/*
+class Animal{
+  constructor(name,age){
+    this.name = name;
+    this.age = age;
+  }
+
+  move(speed){
+    console.log(`THE ${this.name} MOVES AT A SPEED OF ${speed}mph`);
+  }
+}
+class Fish extends Animal{
+   constructor(name,age,swimspeed){
+    super(name,age);
+    this.swimspeed = swimspeed;
+}
+   swim(){
+    console.log(`THIS ${this.name} CAN SWIM`);
+   }
+}
+class Bird extends Animal{
+  constructor(name,age,Flyspeed){
+    super(name,age);
+    this.Flyspeed = Flyspeed;
+  }
+  fly(){
+    console.log(`THIS ${this.name} CAN FLY`);
+  }
+}
+class animal extends Animal{
+  constructor(name,age,Runspeed){
+    super(name,age);
+    this.Runspeed = Runspeed;
+  }
+  run(){
+    console.log(`THIS ${this.name} CAN RUN`);
+  }
+}
+
+const fish = new Fish("GOLDFISH",5,12);
+const bird = new Bird("KINGFISHER",4,30);
+const animal1 = new animal("TIGER",6,60);
+
+fish.swim();
+bird.fly();
+animal1.run();  */
+
+//================================================================================================================//
