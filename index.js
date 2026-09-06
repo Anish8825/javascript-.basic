@@ -1256,3 +1256,40 @@ car1.drive(); */
 
 
 //=============================================================================================================//
+
+//classes = Provides a more structured and cleaner way to work
+//          with objects compared to traditional constructor functions 
+//          ex. static keyword,encapsulation,inheritance
+
+/*
+class product{
+  constructor(name, price){
+    this.name = name;
+    this.price = price;
+  }
+  displayProduct(){
+    console.log(`PRODUCT: ${this.name}`);
+    console.log(`PRICE: $${this.price.toFixed(2)}`);
+  }
+  calculateTotal(salesTax){
+    return this.price + (this.price * salesTax);
+  }
+}
+const salesTax = 0.05;
+
+const product1 = new product("SHIRT", 19.90);
+const product2 = new product("PANT", 25.10);
+
+product1.displayProduct();
+product2.displayProduct();
+
+const total = product1.calculateTotal(salesTax);
+const total1 = product2.calculateTotal(salesTax);
+const totalamount = total + total1;
+
+console.log(`SHIRT PRICE: ${total.toFixed(2)}`);   
+console.log(`PANT PRICE: ${total1.toFixed(2)}`);
+console.log(`TOTAL PRICE YOU PURCHASED IS : ${totalamount}`)  */
+
+//=====================================================================================================//
+
