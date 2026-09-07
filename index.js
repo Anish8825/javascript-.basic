@@ -1553,3 +1553,49 @@ console.log(Person.lastname);
 console.log(Person.age);
 */
 //====================================================================================================================//
+
+//destructring = extract value from arrays and objects,
+//               then assign them to variables in a convenient way
+//               [] = to perform array destructuring
+//               {} = to perfoem object destructuring
+
+// EXAMPLE:
+//SWAPING TWO VALUES
+/*
+let a = 1;
+let b = 2;
+
+[a,b] = [b,a];
+
+console.log(a);
+console.log(b);
+
+const color = ["red","blue","green","black","orange"];
+
+[color[0],color[4]] = [color[4],color[0]];
+
+console.log(color);      */
+
+//EXAMPLE:
+
+function displayperson({firstname,lastname,age,job="unemployed"}){
+  console.log(`name: ${firstname} ${lastname}`);
+  console.log(`age: ${age}`);
+  console.log(`jon: ${job}`);
+}
+
+const person1 = {
+  firstname: "Anish",
+  lastname: "Kumar",
+  age: 20,
+  job: "intern"
+}
+const person2 = {
+  firstname: "Mohamed",
+  lastname: "saif",
+  age: 20,
+  job: "owner",
+}
+
+displayperson(person1);
+displayperson(person2);
