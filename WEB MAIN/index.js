@@ -1503,6 +1503,7 @@ console.log(rectangle.area);
 */
 
 //EXAMPLE:
+/*
 class person{
   
   constructor(firstname,lastname,age){
@@ -1550,5 +1551,5 @@ const Person = new person("raju","ramu",90);
 console.log(Person.firstname);
 console.log(Person.lastname);
 console.log(Person.age);
-
+*/
 //====================================================================================================================//
