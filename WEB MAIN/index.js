@@ -1577,7 +1577,7 @@ const color = ["red","blue","green","black","orange"];
 console.log(color);      */
 
 //EXAMPLE:
-
+/*
 function displayperson({firstname,lastname,age,job="unemployed"}){
   console.log(`name: ${firstname} ${lastname}`);
   console.log(`age: ${age}`);
@@ -1598,4 +1598,6 @@ const person2 = {
 }
 
 displayperson(person1);
-displayperson(person2);
+displayperson(person2);   */
+
+//=======================================================================================================//
