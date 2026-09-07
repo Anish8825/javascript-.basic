@@ -1553,4 +1553,7 @@ console.log(Person.lastname);
 console.log(Person.age);
 */
 //====================================================================================================================//
- 
+
+//destructring = extract value from arrays and objects,
+//               then assign them to variables in a convenient way
+
