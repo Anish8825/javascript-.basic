@@ -1485,18 +1485,71 @@ class Rectangle{
     }
   }
   get width(){
-    return this._width;
+    return `${(this._width.toFixed(1))}cm`;
   }
   get height(){
-    return this._height;
+    return `${(this._height.toFixed(1))}cm`;
+  }
+  get area(){
+    return `${(this._width * this._height).toFixed(1)}cm`;
   }
 }
 
 const rectangle = new Rectangle(20, 30);
 
-h
-
 console.log(rectangle.width);
 console.log(rectangle.height);
-
+console.log(rectangle.area);
 */
+
+//EXAMPLE:
+/*
+class person{
+  
+  constructor(firstname,lastname,age){
+    this.firstname = firstname;
+    this.lastname = lastname;
+    this.age = age;
+  }
+  set firstname(newFirstname){
+    if(typeof newFirstname === "string" && newFirstname.length > 0){
+      this._firtsname = newFirstname;
+    }
+    else{
+      console.error("First name must be non-empty string");
+    }
+  }
+  set lastname(newLastname){
+    if(typeof newLastname === "string" && newLastname.length > 0){
+      this._lastname = newLastname;
+    }
+    else{
+      console.error("Last name is an empty string")
+    }
+  }
+  set age(newage){
+    if(typeof newage === "number" && newage >= 0){
+      this._age = newage;
+    }
+    else{
+      console.error("AGE is empty!")
+    }
+  }
+
+  get firstname(){
+    return this._firtsname;
+  }
+  get lastname(){
+    return this._lastname;
+  }
+  get age(){
+    return this._age;
+}
+}
+
+const Person = new person("raju","ramu",90);
+console.log(Person.firstname);
+console.log(Person.lastname);
+console.log(Person.age);
+*/
+//====================================================================================================================//
