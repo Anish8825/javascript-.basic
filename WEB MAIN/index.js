@@ -1456,3 +1456,49 @@ bird.fly();
 animal1.run();  */
 
 //================================================================================================================//
+
+//getter = special method that makes a property readable
+//setter = special method that make a property writeable
+
+//validate and modify a value when raeding/writing a property
+/*
+class Rectangle{
+
+  constructor(width,height){
+    this.width = width;
+    this.height = height;
+  }
+  set width(newWidth){
+    if(newWidth > 0){
+      this._width = newWidth;
+    }
+    else{
+      console.log("The WIDTH must be positive");
+    }
+  }
+  set height(newHeight){
+    if(newHeight > 0){
+      this._height = newHeight;
+    }
+    else{
+      console.log("The HEIGHT must be positive");
+    }
+  }
+  get width(){
+    return this._width;
+  }
+  get height(){
+    return this._height;
+  }
+}
+
+const rectangle = new Rectangle(20, 30);
+
+h
+
+console.log(rectangle.width);
+console.log(rectangle.height);
+
+*/
+
+//=================================================================================================================//
