@@ -1601,3 +1601,62 @@ displayperson(person1);
 displayperson(person2);   */
 
 //=======================================================================================================//
+
+//nested objects = Objects inside of other objects.
+//                 Allows you ot represent more complex data structures 
+//                 child Object is enclosed ny a parent class 
+
+//                person{Address{},ContactInfo{}}
+//                shopping{Keyboard{},Mouse{},Monitor{}}
+/*
+const Person = {
+  fullname: "Anish kumar",
+  age: 20,
+  isstudent: true,
+  hobbies: ["playing cricket" , "football"],
+
+  address: {
+    street:"gandhinagar",
+    city:"karamadai",
+    country:"india"
+}
+}
+
+//console.log(Person.fullname);
+//console.log(Person.age);
+//console.log(Person.isstudent)
+//console.log(Person.hobbies[1]);
+//console.log(Person.address.street);
+
+for(const property in Person.address){
+  console.log(Person.address[property])
+} */
+//EXAMPLE:
+/*
+class Person{
+  
+  constructor(name,age,...address){
+    this.name = name;
+    this.age = age;
+    this.address = new Address(...address);
+  }
+}
+
+class Address{
+
+  constructor(street, city,country){
+    this.street = street;
+    this.city = city;
+    this.country = country;
+  }
+}
+
+const Person1 = new Person("Anish kumar",20,"372/gandhinagar","bikini bottom","Int.fires");
+const Person2 = new Person("Abishek",21,"karamdai","kuruku sandhu","--street");
+
+console.log(Person1.name);
+console.log(Person1.address.city);
+console.log(Person2.name);
+console.log(Person2.address.city);  */
+
+//=========================================================================================//
