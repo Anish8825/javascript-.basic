@@ -1705,3 +1705,56 @@ console.log(maxfruits);
 console.log(minfruits);     */
 
 //============================================================================================================//
+
+//sort() = Method used to sort elements of an array in place.
+//         Sorts elements as strings in lexicographic order, not alphabetical
+//         lexicographic = (alphabet + numbers + symbols) as strings
+/*
+let fruits = ["apple","orange","banana","coconut","pineapple"];
+
+let num = [1,10,3,5,2,4];
+
+fruits.sort();
+num.sort((a,b) => a-b); //ascending order
+num.sort((a,b) => b-a); //descending order
+
+console.log(fruits);
+console.log(num);
+*/
+
+//EXAMPLE:
+/*
+const people = [{name:"anish",age:20,gpa:30},
+                {name:"kumar",age:29,gpa:29}
+]
+
+people.sort((a,b)=> b.age - a.age); //descending order
+people.sort((a,b)=> a.age - b.age);//ascending order
+people.sort((a,b)=> a.gpa - b.gpa);//ascending orer
+people.sort((a,b)=> b.gpa - a.gpa);
+
+people.sort((a,b)=> a.name.localeCompare(b.name));
+console.log(people);
+*/
+
+//============================================================================================================//
+
+//how to shuffle elements
+/*
+const cards = ['A',2,3,4,5,6,7,8,9,10,'J','Q','K'];
+
+//cards.sort(() => Math.random() - 0.5);
+
+shuffle(cards);
+
+console.log(cards);
+
+function shuffle(array){
+  for(let i=array.length -1;i>0;i--){
+    const random = Math.floor(Math.random() * (i+1));
+
+    [array[i],array[random]] =[ array[random],array[i]];
+  }
+}  */
+
+//===================================================================================================================//
