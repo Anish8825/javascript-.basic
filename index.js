@@ -1659,3 +1659,135 @@ console.log(Person1.address.city);
 console.log(Person2.name);
 console.log(Person2.address.city);  */
 
+//==================================================================================================================//
+
+//Array of object
+/*
+const fruits = [{name:"apple",color:"red",calories:95},
+                {name:"orange",color:"orange",calories:45},
+                {name:"banana",color:"yellow",calories:159},
+                {name:"pineapple",color:"yellow",calories:37},
+                {name:"coconut",color:"white",calories:159}
+];
+
+fruits.splice(1,2);
+fruits.pop()
+fruits.push({name:"grapes",color:"purple",calories:62});
+console.log(fruits);
+
+//--by foreach method--//
+
+fruits.forEach(fruits => console.log(fruits.name));
+fruits.forEach(fruits => console.log(fruits.color));
+
+//--map method--//
+
+const fruitsnames = fruits.map(fruit => fruit.name);
+const fruitcolor = fruits.map(fruit => fruit.color);
+
+console.log(fruitsnames);
+console.log(fruitcolor);
+
+//--filter()--//
+
+const yellowfruits = fruits.filter(fruit => fruit.color === "yellow");
+const calfruits = fruits.filter(fruit => fruit.calories < 150);
+
+console.log(yellowfruits);
+console.log(calfruits);
+
+//--reduce--//
+
+const maxfruits = fruits.reduce((max,fruit) => fruit.calories > max.calories ? fruit : max );
+const minfruits = fruits.reduce((min,fruit) => fruit.calories < min.calories ? fruit : min);
+
+console.log(maxfruits);
+console.log(minfruits);     */
+
+//============================================================================================================//
+
+//sort() = Method used to sort elements of an array in place.
+//         Sorts elements as strings in lexicographic order, not alphabetical
+//         lexicographic = (alphabet + numbers + symbols) as strings
+/*
+let fruits = ["apple","orange","banana","coconut","pineapple"];
+
+let num = [1,10,3,5,2,4];
+
+fruits.sort();
+num.sort((a,b) => a-b); //ascending order
+num.sort((a,b) => b-a); //descending order
+
+console.log(fruits);
+console.log(num);
+*/
+
+//EXAMPLE:
+/*
+const people = [{name:"anish",age:20,gpa:30},
+                {name:"kumar",age:29,gpa:29}
+]
+
+people.sort((a,b)=> b.age - a.age); //descending order
+people.sort((a,b)=> a.age - b.age);//ascending order
+people.sort((a,b)=> a.gpa - b.gpa);//ascending orer
+people.sort((a,b)=> b.gpa - a.gpa);
+
+people.sort((a,b)=> a.name.localeCompare(b.name));
+console.log(people);
+*/
+
+//============================================================================================================//
+
+//how to shuffle elements
+/*
+const cards = ['A',2,3,4,5,6,7,8,9,10,'J','Q','K'];
+
+//cards.sort(() => Math.random() - 0.5);
+
+shuffle(cards);
+
+console.log(cards);
+
+function shuffle(array){
+  for(let i=array.length -1;i>0;i--){
+    const random = Math.floor(Math.random() * (i+1));
+
+    [array[i],array[random]] =[ array[random],array[i]];
+  }
+}  */
+
+//===================================================================================================================//
+
+//Data Objects = Objects that contains values that represent dates and times
+//               These date objects can be changed and formatted
+/*
+
+const date = new Date();
+
+console.log(date);
+
+const year = date.getFullYear();
+const month = date.getMonth();
+const day = date.getDate();
+const hour = date.getHours();
+const minutes = date.getMinutes();
+const second = date.getSeconds();
+const dayofweek = date.getDay()
+
+console.log(year);
+console.log(month);
+console.log(day);
+console.log(hour);
+console.log(minutes);
+console.log(second);
+console.log(dayofweek);
+
+const date1 = new Date("2025-12-30");
+const date2 = new Date("2026-01-01");
+
+if(date2 > date1){
+  console.log("HAPPY NEW YEAR!!!");
+}  */
+
+//==============================================================================================================//
