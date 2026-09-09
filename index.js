@@ -1791,3 +1791,79 @@ if(date2 > date1){
 }  */
 
 //==============================================================================================================//
+
+//closure = A function defined inside of another function,
+//          the inner function has access to the variables 
+//          and scope of outer function.
+//          Allow for private variables and state maintenance 
+//          used frequently in JS framework: react,vue,Angular.
+/*
+function outer(){
+  let message = "HELLO";
+  function inner(){
+  console.log(message);
+}
+inner();
+}
+outer();
+*/
+
+//EXAMPLE:
+/*
+function createcounter(){
+
+  let count = 0;
+
+function increment(){
+  count ++;
+  console.log(`count increased to ${count}`);
+}
+  function getcount(){
+    return count;
+  }
+
+  return {increment,getcount};
+}
+
+const counter = createcounter();
+
+counter.increment();
+counter.increment();
+counter.increment();
+
+
+console.log(`THE CORRECT COUNT IS ${counter.getcount()}`);   */
+
+//Example:
+/*
+
+function game(){
+
+let score = 0;
+
+function incresescore(points){
+  score += points;
+  console.log(`+${points}pts`);
+}
+
+function decreasescore(points){
+  score -= points;
+  console.log(`-${points}pts`);
+}
+
+function getscore(){
+  return score;
+
+}
+return {incresescore,decreasescore,getscore};
+}
+
+const Game = game();
+
+Game.incresescore(7);
+Game.incresescore(6);
+Game.decreasescore(3);
+
+console.log(`THE FINAL SCORE IS: ${Game.getscore()}`)  */
+
+//=============================================================================================================// 
