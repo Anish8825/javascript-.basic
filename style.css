@@ -70,7 +70,8 @@ body{
     backdrop-filter: blur(5px);
 }
 */ 
-
+/*
+//------stop watch-------//
 body{
     display: flex;
     flex-direction: column;
@@ -131,3 +132,4 @@ body{
     background-color: rgb(230, 241, 136);
 }
 
+*/

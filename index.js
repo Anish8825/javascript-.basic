@@ -1932,7 +1932,7 @@ setInterval(updateclock,100);
 //===========================================================================================================//
 
 //STOP WATCH//
-
+/*
 const display = document.getElementById("display");
 let timer = null;
 let startTime = 0;
@@ -1980,3 +1980,7 @@ function update(){
 
   display.textContent = `${hours}:${minutes}:${seconds}:${milliseconds}`;
 }
+
+*/
+
+//===============================================================================================//
