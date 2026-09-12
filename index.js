@@ -2007,3 +2007,28 @@ console.log(`${volume.toFixed(2)}cm^3`);
 */
 
 //==========================================================================================================//
+
+// synchronous = Executes line by line consecutively manner
+//               code that waits for an operation to complete.
+
+//Asynchronous = Allows multiple operations to be performed concurrently witout waiting
+//               Doesn't block the execution flow and allows the program to continue
+//               (I/O operations,network request,fetching data)
+//               Handled with: Callbacks,Promises,Async/Await
+
+//EXAMPLE:
+/*
+function func1(Callback){
+  setTimeout(() => {console.log("Task1");
+                   Callback()},3000);
+  }
+
+function func2(){
+  console.log("Task2");
+  console.log("Task3");
+  console.log("Task4");
+}
+
+func1(func2);  /*
+
+//===========================================================================================================//
