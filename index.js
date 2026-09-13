@@ -2029,6 +2029,69 @@ function func2(){
   console.log("Task4");
 }
 
-func1(func2);  /*
+func1(func2);  */
 
 //===========================================================================================================//
+
+//ERROR = An object that is created to represent a problem that occurs
+//        Occur often with user input or establishing a connection
+
+// console.lag("HELLO");   //TYPE ERROR
+
+// console.log("You have reached the end!");
+
+// console.log(x); //REFERANCE ERROR
+
+//TYPES OF ERROR = NETWORK ERROR, PROMISE REJECTION, SECURITY ERROR
+
+// HOW TO REDUCE ERRORS = BY USING try{}, catch{}, finally{}.
+/*
+try{
+  console.log("Helloo");
+}
+
+catch(error){
+  console.error(error);
+}
+
+finally{
+  console.log("This always executes"); 
+}   */
+
+//EXAMPLE:
+/*
+const dividend = window.prompt("Enter the dividend: ");
+const divisor = window.prompt("Enter the divisor: ");
+
+const result = dividend / divisor;
+
+console.log(result);
+
+*/
+
+/*
+try{
+
+const dividend = window.prompt("Enter the dividend: ");
+const divisor = window.prompt("Enter the divisor: ");
+
+if(divisor){
+  throw new Error("you can't divide by Zero!!");
+}
+if(isNaN(dividend) || isNaN(divisor)){
+  throw new Error("Values must be a number");
+}
+
+const result = dividend / divisor;
+
+console.log(result);
+
+}
+
+catch(error){
+  console.log(error);
+}
+
+console.log("YOU HAVE REACHED THE END");   */
+
+//============================================================================================================//
