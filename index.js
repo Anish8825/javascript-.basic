@@ -2097,7 +2097,7 @@ console.log("YOU HAVE REACHED THE END");   */
 //============================================================================================================//
 
 //CALCULATOR PROGRAM:
-
+/*
 const display = document.getElementById("display");
 
 function appendToDisplay(input){
@@ -2116,3 +2116,30 @@ function calculate(){
     display.value = "Error";
   }
 }
+   */
+
+//==============================================================================================================//
+
+// DOM = DOCUMENT OBJECT MODEL 
+//       Object{} that represents the page you see in the web page browser 
+//       and provides you with an APIs to interact with it.
+//       Web browser constructs the DOM when it loads an HTML document,
+//       and structures all element in a tree like representation.
+//       Javascript can access the DOM to dynamically 
+//       change the content, structure, and style of a web page.
+
+//document.getElementById("---");
+//console.log(document);
+//console.dir(document);
+
+//document.title = "My Website";
+//document.body.style.backgroundColor = "hsl(0,0%,15%)";
+
+//console.dir(document);
+/*
+const username = " Anish Kumar";
+const welcomeMsg = document.getElementById("welcome-msg");
+
+welcomeMsg.textContent += username === "" ? 'Guest' :  username; */
+
+//===========================================================================================================//
