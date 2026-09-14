@@ -2143,3 +2143,35 @@ const welcomeMsg = document.getElementById("welcome-msg");
 welcomeMsg.textContent += username === "" ? 'Guest' :  username; */
 
 //===========================================================================================================//
+
+//ELEMENT SELECTORS = Methods used to target and manipulate HTML elements
+//                    They allow you to select one or more HTML elements
+//                    from the DOM (Document Object Model)
+
+//1.) document.getElementById()  //ELEMENT OR NULL
+//2.) document.getElementsClassName() //HTML COLLECTION
+//3.) document.getElementByTagName() //HTML COLLECTION
+//4.) document.querySelector() //ELEMENT OR NULL
+//5.) document.querySelectorAll() //NODELIST
+
+
+//by id name 
+
+const myHeading = document.getElementById("my-heading");
+myHeading.style.backgroundColor = "blue";
+myHeading.style.textAlign = "center";
+
+console.log(myHeading);
+
+//by class name
+
+const fruits = document.getElementsByClassName("fruits");
+
+fruits[0].style.backgroundColor = "red";
+fruits[0].style.textAlign = "center";
+fruits[1].style.backgroundColor = "orange";
+fruits[1].style.textAlign = "center";
+fruits[2].style.backgroundColor = "yellow";
+fruits[2].style.textAlign = "center";
+
+console.log(fruits);
