@@ -2180,8 +2180,8 @@ console.log(fruits);  */
 
 //by tag name
 
-const h4Elements = document.getElementsByTagName("h4");
-const liElements = document.getElementsByTagName("li");
+//const h4Elements = document.getElementsByTagName("h4");
+//const liElements = document.getElementsByTagName("li");
 /*
 for(let h4Element of h4Elements){
   h4Element.style.backgroundColor = "yellow";
@@ -2195,10 +2195,18 @@ for(let liElement of liElements){
 console.log(h4Elements); */
 
 //Another method
+/*
 Array.from(h4Elements).forEach(h4Element =>{
   h4Element.style.backgroundColor = "yellow";
   h4Element.style.textAlign = "center";
 });
 Array.from(liElements).forEach(liElement =>{
   liElement.style.backgroundColor = "lightgreen";
-})
+}) */
+
+
+//query selector
+
+const element = document.querySelector("ul");
+                                                   //used to select queries
+element.style.backgroundColor = "lightgreen";   
