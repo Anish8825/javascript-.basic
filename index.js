@@ -2204,9 +2204,20 @@ Array.from(liElements).forEach(liElement =>{
   liElement.style.backgroundColor = "lightgreen";
 }) */
 
-
+/*
 //query selector
 
-const element = document.querySelector("ul");
+//const element = document.querySelector("ul");
                                                    //used to select queries
-element.style.backgroundColor = "lightgreen";   
+//element.style.backgroundColor = "lightgreen";   */
+
+
+//querySelectorAll()
+/*
+const fruits = document.querySelectorAll(".fruits");
+
+fruits[0].style.backgroundColor = "yellow";
+
+console.log(fruits);   */
+
+//===========================================================================================================//
