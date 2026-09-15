@@ -2154,15 +2154,16 @@ welcomeMsg.textContent += username === "" ? 'Guest' :  username; */
 //4.) document.querySelector() //ELEMENT OR NULL
 //5.) document.querySelectorAll() //NODELIST
 
-
+/*
 //by id name 
 
 const myHeading = document.getElementById("my-heading");
 myHeading.style.backgroundColor = "blue";
 myHeading.style.textAlign = "center";
 
-console.log(myHeading);
+console.log(myHeading);  */
 
+/*
 //by class name
 
 const fruits = document.getElementsByClassName("fruits");
@@ -2174,4 +2175,30 @@ fruits[1].style.textAlign = "center";
 fruits[2].style.backgroundColor = "yellow";
 fruits[2].style.textAlign = "center";
 
-console.log(fruits);
+console.log(fruits);  */
+
+
+//by tag name
+
+const h4Elements = document.getElementsByTagName("h4");
+const liElements = document.getElementsByTagName("li");
+/*
+for(let h4Element of h4Elements){
+  h4Element.style.backgroundColor = "yellow";
+  h4Element.style.textAlign = "center";
+}
+
+for(let liElement of liElements){
+  liElement.style.backgroundColor = "lightgreen";
+}
+
+console.log(h4Elements); */
+
+//Another method
+Array.from(h4Elements).forEach(h4Element =>{
+  h4Element.style.backgroundColor = "yellow";
+  h4Element.style.textAlign = "center";
+});
+Array.from(liElements).forEach(liElement =>{
+  liElement.style.backgroundColor = "lightgreen";
+})
