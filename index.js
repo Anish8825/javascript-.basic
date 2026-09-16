@@ -2285,3 +2285,26 @@ ulElements.forEach(ulElement => {
   const lastChild = ulElement.lastElementChild;
   lastChild.style.backgroundColor = "yellow";
 }); */
+
+//----- nextElementSibiling() -----
+/*
+const element = document.getElementById("apple");
+
+const nextsibiling = element.nextElementSibling;
+nextsibiling.style.backgroundColor = "yellow";
+
+const element2 = document.getElementById("carrot");
+
+const nextsibiling2 = element2.nextElementSibling;
+nextsibiling2.style.backgroundColor = "yellow";
+
+const element3 = document.getElementById("cake");
+
+const nextsibiling3 = element3.nextElementSibling;
+nextsibiling3.style.backgroundColor = "yellow";
+*/
+//EXAMPLE:
+/*
+const element = document.getElementById("fruits");
+const nextsibiling = element.nextElementSibling;
+nextsibiling.style.backgroundColor = "yellow"; */
