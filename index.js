@@ -2248,3 +2248,40 @@ const element3 = document.getElementById("deserts");
 
 const firstChild3 = element3.firstElementChild;
 firstChild3.style.background = "yellow";  */
+
+//EXAMPLE:
+
+//SELECTING ALL ELEMENTS
+/*
+const ulElements = document.querySelectorAll("ul");
+
+ulElements.forEach(ulElement => {
+  const firstChild = ulElement.firstElementChild;
+  firstChild.style.backgroundColor = "yellow";
+});   */
+
+//----- .lastElementChild() -----
+/*
+const element = document.getElementById("fruits");
+const lastChild = element.lastElementChild;
+
+lastChild.style.backgroundColor = "yellow";
+
+const element2 = document.getElementById("vegetables");
+const lastChild2 = element2.lastElementChild;
+
+lastChild2.style.backgroundColor = "yellow";
+
+const element3 = document.getElementById("deserts");
+const lastChild3 = element3.lastElementChild;
+
+lastChild3.style.backgroundColor = "yellow";  */
+
+//EXAMPLE:
+/*
+const ulElements = document.querySelectorAll("ul");
+
+ulElements.forEach(ulElement => {
+  const lastChild = ulElement.lastElementChild;
+  lastChild.style.backgroundColor = "yellow";
+}); */
