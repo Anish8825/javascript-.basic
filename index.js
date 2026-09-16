@@ -2308,3 +2308,23 @@ nextsibiling3.style.backgroundColor = "yellow";
 const element = document.getElementById("fruits");
 const nextsibiling = element.nextElementSibling;
 nextsibiling.style.backgroundColor = "yellow"; */
+
+//----- previousElementChild -----
+/*
+const element1 = document.getElementById("orange");
+const previouselement1 = element1.previousElementSibling;
+previouselement1.style.backgroundColor = "yellow";
+
+const element2 = document.getElementById("onion");
+const previouselement2 = element2.previousElementSibling;
+previouselement2.style.backgroundColor = "yellow";
+
+const element3 = document.getElementById("browine");
+const previouselement3 = element3.previousElementSibling;
+previouselement3.style.backgroundColor = "yellow";   */
+
+//EXAMPLE:
+/*
+const element3 = document.getElementById("vegetables");
+const previouselement3 = element3.previousElementSibling;
+previouselement3.style.backgroundColor = "yellow";  */
