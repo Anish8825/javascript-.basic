@@ -2328,3 +2328,55 @@ previouselement3.style.backgroundColor = "yellow";   */
 const element3 = document.getElementById("vegetables");
 const previouselement3 = element3.previousElementSibling;
 previouselement3.style.backgroundColor = "yellow";  */
+
+//----- parentchild -----
+
+//EXAMPLE:
+/*
+const element1 = document.getElementById("banana");
+const parent1 = element1.parentElement;
+parent1.style.backgroundColor = "yellow";
+
+const element2 = document.getElementById("onion");
+const parent2 = element2.parentElement;
+parent2.style.backgroundColor = "yellow";
+
+const element3 = document.getElementById("cake");
+const parent3 = element3.parentElement;
+parent3.style.backgroundColor = "yellow";  */
+
+//----- children -----
+/*
+const element1 = document.getElementById("fruits");
+const children1 = element1.children;
+
+console.log(children1);
+
+const element2 = document.getElementById("vegetables");
+const children2 = element3.children;
+
+console.log(children2);
+
+const element3 = document.getElementById("deserts");
+const children3 = element3.children;
+
+console.log(children3); */
+
+//EXAMPLE:
+/*
+const element = document.getElementById("fruits");
+const children = element.children;
+
+children[1].style.backgroundColor = "yellow";
+
+const element1 = document.getElementById("vegetables");
+const children1 = element1.children;
+
+children1[1].style.backgroundColor = "yellow";
+
+const element3 = document.getElementById("deserts");
+const children2 = element3.children;
+
+children2[1].style.backgroundColor = "yellow";  */
+
+//=============================================================================================================//
