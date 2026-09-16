@@ -2331,7 +2331,7 @@ previouselement3.style.backgroundColor = "yellow";  */
 
 //----- parentchild -----
 
-//EXAMPLE:
+//EXAMPLE: 
 /*
 const element1 = document.getElementById("banana");
 const parent1 = element1.parentElement;
