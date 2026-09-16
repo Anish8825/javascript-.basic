@@ -2221,3 +2221,30 @@ fruits[0].style.backgroundColor = "yellow";
 console.log(fruits);   */
 
 //===========================================================================================================//
+
+//DOM Navigation = The process of navigating through the structure
+//                 of an HTML document using Javascript.
+
+// .firstElementChild()
+// .lastElementChild()
+// .nextElementSibling
+// .previousElementSibling
+// .parentElement
+// .children
+
+//----- .firstElementChild() -----
+/*
+const element = document.getElementById("fruits");
+
+const firstChild = element.firstElementChild;
+firstChild.style.background = "yellow";
+
+const element2 = document.getElementById("vegetables");
+
+const firstChild2 = element2.firstElementChild;
+firstChild2.style.background = "yellow";
+
+const element3 = document.getElementById("deserts");
+
+const firstChild3 = element3.firstElementChild;
+firstChild3.style.background = "yellow";  */
