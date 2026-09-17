@@ -2385,13 +2385,15 @@ children2[1].style.backgroundColor = "yellow";  */
 
 // STEP 1 CREATE THE ELEMENT 
 
+/*
 const newH1 = document.createElement("h1");
 const newH2 = document.createElement("h1");
 const newH3 = document.createElement("h1");
-const newH4 = document.createElement("h1");
+const newH4 = document.createElement("h1");    */
 
 // STEP 2 ADD ATTRIBUTES/PROPERTIES
 
+/*
 newH1.textContent = "ANISH KUMAR M";
 newH1.id = "myH1";
 newH1.style.color = "lightblue";
@@ -2410,18 +2412,20 @@ newH3.style.textAlign = "center";
 newH4.textContent = "SURYA Y";
 newH4.id = "myH4";
 newH4.style.color = "orange";
-newH4.style.textAlign = "center";
+newH4.style.textAlign = "center";  */
 
 // STEP 3 APPEND ELEMENT TO DOM 
 
 //document.body.append(newH1);  //Add message at the end 
- 
+
+/*
 document.getElementById("box1").append(newH1);
 document.getElementById("box2").append(newH2);
 document.getElementById("box3").append(newH3);
-document.getElementById("box4").append(newH4);
+document.getElementById("box4").append(newH4);    */
 
 //document.body.prepend(newH1); //Add the content first and box name next
+
 /*
 document.getElementById("box1").prepend(newH1);
 document.getElementById("box2").prepend(newH2);
@@ -2438,19 +2442,22 @@ const box3 = document.getElementById("box3");
 document.body.insertBefore(newH3, box3);
 
 const box4 = document.getElementById("box4");
-document.body.insertBefore(newH4, box4);  */     //The message will come out of the box
+document.body.insertBefore(newH4, box4);       //The message will come out of the box  */
 
 
 // REMOVE HTML ELEMENT
 
 //removes the message
+
 /*
 document.body.removeChild(newH1);
 document.body.removeChild(newH2);
 document.body.removeChild(newH3);
-document.body.removeChild(newH4); */
+document.body.removeChild(newH4);
 
 document.getElementById("box1").removeChild(newH1);
 document.getElementById("box2").removeChild(newH2);
 document.getElementById("box3").removeChild(newH3);
-document.getElementById("box4").removeChild(newH4);
+document.getElementById("box4").removeChild(newH4);   */
+
+//================================================================================================================//
