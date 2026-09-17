@@ -2460,4 +2460,26 @@ document.getElementById("box2").removeChild(newH2);
 document.getElementById("box3").removeChild(newH3);
 document.getElementById("box4").removeChild(newH4);   */
 
+//EXAMPLE:
+
+const newlistitem = document.createElement("li");
+
+newlistitem.textContent = "COCONUT";
+
+newlistitem.id = "coconut";
+newlistitem.style.backgroundColor = "brown";
+newlistitem.style.textAlign = "center";
+newlistitem.style.fontWeight = "bold";
+newlistitem.style.fontSize = "larger";
+newlistitem.style.color = "white";
+
+document.body.append(newlistitem);
+
+document.getElementById("fruits").append(newlistitem); //adding with the list atlast
+
+document.getElementById("fruits").prepend(newlistitem); //adding the element before the list 
+
+const orange = document.getElementById("orange");
+document.getElementById("fruits").insertBefore(newlistitem, orange); //Inserting the element inbetween the list
+
 //================================================================================================================//
