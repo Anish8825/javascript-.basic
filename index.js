@@ -2386,9 +2386,9 @@ children2[1].style.backgroundColor = "yellow";  */
 // STEP 1 CREATE THE ELEMENT 
 
 const newH1 = document.createElement("h1");
-const newH2 = document.createElement("h2");
-const newH3 = document.createElement("h3");
-const newH4 = document.createElement("h4");
+const newH2 = document.createElement("h1");
+const newH3 = document.createElement("h1");
+const newH4 = document.createElement("h1");
 
 // STEP 2 ADD ATTRIBUTES/PROPERTIES
 
@@ -2419,6 +2419,9 @@ newH4.style.textAlign = "center";
 //document.body.prepend(newH1); //Add text first 
 
 document.getElementById("box1").append(newH1);
+document.getElementById("box2").append(newH2);
+document.getElementById("box3").append(newH3);
+document.getElementById("box4").append(newH4);
 
 // REMOVE HTML ELEMENT
 
