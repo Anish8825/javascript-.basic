@@ -2222,7 +2222,7 @@ console.log(fruits);   */
 
 //===========================================================================================================//
 
-//DOM Navigation = The process of navigating through the structure
+//DOM Navigation = The process of navigating through the structure    //DOM - document object model
 //                 of an HTML document using Javascript.
 
 // .firstElementChild()
@@ -2380,3 +2380,23 @@ const children2 = element3.children;
 children2[1].style.backgroundColor = "yellow";  */
 
 //=============================================================================================================//
+
+//------ Add and change HTML elements ------
+
+// STEP 1 CREATE THE ELEMENT 
+
+const newH1 = document.createElement("h1");
+
+// STEP 2 ADD ATTRIBUTES/PROPERTIES
+
+newH1.textContent = "I LIKE PIZZA!";
+newH1.id = "myH1";
+newH1.style.color = "tomato";
+newH1.style.textAlign = "center";
+
+// STEP 3 APPEND ELEMENT TO DOM 
+
+
+// REMOVE HTML ELEMENT
+
+
