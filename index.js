@@ -2386,16 +2386,39 @@ children2[1].style.backgroundColor = "yellow";  */
 // STEP 1 CREATE THE ELEMENT 
 
 const newH1 = document.createElement("h1");
+const newH2 = document.createElement("h2");
+const newH3 = document.createElement("h3");
+const newH4 = document.createElement("h4");
 
 // STEP 2 ADD ATTRIBUTES/PROPERTIES
 
-newH1.textContent = "I LIKE PIZZA!";
+newH1.textContent = "ANISH KUMAR M";
 newH1.id = "myH1";
-newH1.style.color = "tomato";
+newH1.style.color = "lightblue";
 newH1.style.textAlign = "center";
+
+newH2.textContent = "ABISHEK S";
+newH2.id = "myH2";
+newH2.style.color = "RED";
+newH2.style.textAlign = "center";
+
+newH3.textContent = "DANISH P";
+newH3.id = "myH3";
+newH3.style.color = "pink";
+newH3.style.textAlign = "center";
+
+newH4.textContent = "SURYA Y";
+newH4.id = "myH4";
+newH4.style.color = "orange";
+newH4.style.textAlign = "center";
 
 // STEP 3 APPEND ELEMENT TO DOM 
 
+//document.body.append(newH1);  //Add atlast at the end 
+
+//document.body.prepend(newH1); //Add text first 
+
+document.getElementById("box1").append(newH1);
 
 // REMOVE HTML ELEMENT
 
