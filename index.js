@@ -2461,7 +2461,7 @@ document.getElementById("box3").removeChild(newH3);
 document.getElementById("box4").removeChild(newH4);   */
 
 //EXAMPLE:
-
+/*
 const newlistitem = document.createElement("li");
 
 newlistitem.textContent = "COCONUT";
@@ -2480,6 +2480,6 @@ document.getElementById("fruits").append(newlistitem); //adding with the list at
 document.getElementById("fruits").prepend(newlistitem); //adding the element before the list 
 
 const orange = document.getElementById("orange");
-document.getElementById("fruits").insertBefore(newlistitem, orange); //Inserting the element inbetween the list
+document.getElementById("fruits").insertBefore(newlistitem, orange); //Inserting the element inbetween the list   */
 
 //================================================================================================================//
