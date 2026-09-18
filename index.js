@@ -2510,7 +2510,14 @@ mybox.addEventListener("click", (event) =>{
 //-----mouseover-----
 
 mybox.addEventListener("mouseover", event =>{
-  event.target.style.backgroundColor = "brown";
-  event.target.textContent = "CURSOR IS MISSING🧐..."
+  event.target.style.backgroundColor = "yellow";
+  event.target.textContent = "CURSOR FOUND😊..."
 
+});
+
+//------mouseout------
+
+mybox.addEventListener("mouseout", event => {
+  event.target.style.backgroundColor = "brown";
+  event.target.textContent = "CURSOR IS MISSING🧐....!";
 });
