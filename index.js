@@ -2488,7 +2488,7 @@ document.getElementById("fruits").insertBefore(newlistitem, orange); //Inserting
 //                events: click, mouseover, mouseout
 //                .addEventListener(event, callback);
 
-
+/*
 const mybox = document.getElementById("mybox");
 
 function changecolor(event){
@@ -2497,8 +2497,8 @@ function changecolor(event){
 }
 
 mybox.addEventListener("click", changecolor);
-     //Events inside function
-
+     //Events inside function  
+*/
 /*
 const mybox = document.getElementById("mybox");
 
@@ -2508,16 +2508,38 @@ mybox.addEventListener("click", (event) =>{
 });  //Event by using arrow function   */
 
 //-----mouseover-----
-
+/*
 mybox.addEventListener("mouseover", event =>{
   event.target.style.backgroundColor = "yellow";
   event.target.textContent = "CURSOR FOUND😊..."
 
-});
+});   */
 
 //------mouseout------
-
+/*
 mybox.addEventListener("mouseout", event => {
   event.target.style.backgroundColor = "brown";
   event.target.textContent = "CURSOR IS MISSING🧐....!";
+});    */
+
+//EXAMPLE:
+/*
+const mybox = document.getElementById("mybox");
+
+function changecolor(event){
+  event.target.style.backgroundColor = "yellow";
+  event.target.textContent = "HEY BUDDY!..😜 HOW ARE YOU?..";
+}
+
+mybox.addEventListener("click", changecolor);
+mybox.addEventListener("mouseover", event =>{
+  event.target.style.backgroundColor = "blue";
+  event.target.textContent = "'BYE','BYEEE'👋....!"
+
 });
+
+mybox.addEventListener("mouseout", event => {
+  event.target.style.backgroundColor = "brown";
+  event.target.textContent = "MISSING UHHHUUHU 😓💔....";
+}); 
+*/
