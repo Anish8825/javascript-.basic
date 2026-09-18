@@ -2483,3 +2483,18 @@ const orange = document.getElementById("orange");
 document.getElementById("fruits").insertBefore(newlistitem, orange); //Inserting the element inbetween the list   */
 
 //================================================================================================================//
+
+//eventListener = Listen for specific events to create interactive web pages
+//                events: click, mouseover, mouseout
+//                .addEventListener(event, callback);
+
+/*
+const mybox = document.getElementById("mybox");
+
+function changecolor(event){
+  event.target.style.backgroundColor = "white";
+  event.target.textContent = "HEY😜! HOW ARE YOU..";
+}
+
+mybox.addEventListener("click", changecolor);
+*/     //Events inside function

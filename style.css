@@ -196,6 +196,9 @@ button:active{
 
 /*==================================================================================*/
 
+/* ------ DOM add and change elements ------ */
+
+/*
 .box{
     border: 3px solid;
     width: 100%;
@@ -211,4 +214,19 @@ button:active{
     font-size: 2rem;
     text-align: center;
     background-color: aquamarine;
+}    */
+
+/*===================================================================================*/
+
+/* ------ Mouse Events ------ */
+#mybox{
+    background-color: rgb(216, 97, 155);
+    width: 1900px;
+    height: 300px;
+    font-weight: bold;
+    font-size: 4.5rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: black;
 }
