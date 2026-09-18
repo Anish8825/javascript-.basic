@@ -2488,7 +2488,7 @@ document.getElementById("fruits").insertBefore(newlistitem, orange); //Inserting
 //                events: click, mouseover, mouseout
 //                .addEventListener(event, callback);
 
-/*
+
 const mybox = document.getElementById("mybox");
 
 function changecolor(event){
@@ -2497,7 +2497,7 @@ function changecolor(event){
 }
 
 mybox.addEventListener("click", changecolor);
-*/     //Events inside function
+     //Events inside function
 
 /*
 const mybox = document.getElementById("mybox");
