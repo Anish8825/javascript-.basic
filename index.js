@@ -2498,3 +2498,19 @@ function changecolor(event){
 
 mybox.addEventListener("click", changecolor);
 */     //Events inside function
+
+/*
+const mybox = document.getElementById("mybox");
+
+mybox.addEventListener("click", (event) =>{
+  event.target.style.backgroundColor = "white";
+  event.target.textContent = "HEY😜! HOW ARE YOU..";
+});  //Event by using arrow function   */
+
+//-----mouseover-----
+
+mybox.addEventListener("mouseover", event =>{
+  event.target.style.backgroundColor = "brown";
+  event.target.textContent = "CURSOR IS MISSING🧐..."
+
+});
