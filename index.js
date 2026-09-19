@@ -2641,3 +2641,17 @@ myButton.addEventListener("click", event=>{
   }
 });
 
+const myButton1 = document.getElementById("myButton");
+const myImg1 = document.getElementById("myImg");
+
+myButton1.addEventListener("click", event=>{
+
+  if(myImg1.style.visibility === "hidden"){
+    myImg.style.visibility = "visible";
+    myButton.textContent = "HIDE";
+  }
+  else{
+  myImg.style.visibility = "hidden";
+  myButton.textContent = "SHOW";
+  }
+});
