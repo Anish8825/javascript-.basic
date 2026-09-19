@@ -2558,7 +2558,7 @@ mybox.addEventListener("mouseout", event => {
 document.addEventListener("keyup", event => {
   console.log(`key up = ${event.key}`);
 })*/
-
+/*
 const mybox = document.getElementById("mybox");
 
 document.addEventListener("keydown", event => {
@@ -2571,3 +2571,5 @@ document.addEventListener("keyup", event => {
   mybox.textContent = "😉";
   mybox.style.backgroundColor = "blue";
 });
+*/
+
