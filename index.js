@@ -2566,3 +2566,8 @@ document.addEventListener("keydown", event => {
   mybox.style.backgroundColor = "green";
 });
 
+
+document.addEventListener("keyup", event => {
+  mybox.textContent = "😉";
+  mybox.style.backgroundColor = "blue";
+});
