@@ -236,7 +236,7 @@ button:active{
 
 /*------key event listener------ */
 
-
+/*
 #mybox{
     background-color: rgb(255, 95, 159);
     width: 250px;
@@ -246,4 +246,12 @@ button:active{
     justify-content: center;
     align-items: center;
     position: relative;
+}  */
+
+/*======================================================================================*/
+
+/*-----click & hide button -----*/
+
+#myButton{
+    font-size: 2rem;
 }

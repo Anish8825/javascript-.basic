@@ -2624,3 +2624,20 @@ document.addEventListener("keydown", event => {
 
 //========================================================================================================//
 
+//-------hide & show button-----//
+
+const myButton = document.getElementById("myButton");
+const myImg = document.getElementById("myImg");
+
+myButton.addEventListener("click", event=>{
+
+  if(myImg.style.display === "none"){
+    myImg.style.display = "block";
+    myButton.textContent = "HIDE";
+  }
+  else{
+  myImg.style.display = "none";
+  myButton.textContent = "SHOW";
+  }
+});
+
