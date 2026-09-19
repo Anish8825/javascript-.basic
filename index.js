@@ -2574,6 +2574,7 @@ document.addEventListener("keyup", event => {
 */
 
 //EXAMPLE:
+/*
 const mybox = document.getElementById("mybox");
 const moveAmount = 10;
 let x = 0;
@@ -2619,3 +2620,7 @@ document.addEventListener("keydown", event => {
 
   }
 });
+*/
+
+//========================================================================================================//
+
