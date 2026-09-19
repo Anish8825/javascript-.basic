@@ -2625,7 +2625,7 @@ document.addEventListener("keydown", event => {
 //========================================================================================================//
 
 //-------hide & show button-----//
-
+/*
 const myButton = document.getElementById("myButton");
 const myImg = document.getElementById("myImg");
 
@@ -2640,7 +2640,8 @@ myButton.addEventListener("click", event=>{
   myButton.textContent = "SHOW";
   }
 });
-
+*/
+/*
 const myButton1 = document.getElementById("myButton");
 const myImg1 = document.getElementById("myImg");
 
@@ -2654,4 +2655,6 @@ myButton1.addEventListener("click", event=>{
   myImg.style.visibility = "hidden";
   myButton.textContent = "SHOW";
   }
-});
+});  */
+
+//============================================================================================================//
