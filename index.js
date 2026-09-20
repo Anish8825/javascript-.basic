@@ -2680,7 +2680,7 @@ buttons.forEach(button => {
 buttons.forEach(button =>{
   button.addEventListener("click", event => {
     event.target.style.backgroundColor = "white";
-  })
+  });
 });
 
 //MOUSEOVER & MOUSEOUT event listener
@@ -2689,5 +2689,11 @@ buttons.forEach(button =>{
   button.addEventListener("mouseover", event => {
     event.target.style.backgroundColor = "orange";
     //event.target.textContent += "💕";
-  })
-})
+  });
+});
+
+buttons.forEach(button =>{
+  button.addEventListener("mouseout", event=>{
+    event.target.style.backgroundColor = "rgb(90, 214, 204)";
+  });
+});
