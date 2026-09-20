@@ -2697,3 +2697,14 @@ buttons.forEach(button =>{
     event.target.style.backgroundColor = "rgb(90, 214, 204)";
   });
 });
+
+// ADD AN ELEMENT 
+
+const newbutton = document.createElement("button");
+newbutton.textContent = "button5";
+newbutton.classList = "mybutton";
+document.body.appendChild(newbutton);
+
+buttons = document.querySelectorAll(".mybutton");
+
+console.log(buttons);
