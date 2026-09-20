@@ -2665,7 +2665,7 @@ myButton1.addEventListener("click", event=>{
 //            can be created by using querySelectorAll()
 //            similar to an array, but no (map, filter, reduce) have forEach
 //            NodeList won't update to automically reflects changes
-
+/*
 let buttons = document.querySelectorAll(".mybutton");
 
 // ADD HTML/CSS PROPERTIES //
@@ -2708,3 +2708,7 @@ document.body.appendChild(newbutton);
 buttons = document.querySelectorAll(".mybutton");
 
 console.log(buttons);
+
+*/
+
+//=========================================================================================================//
