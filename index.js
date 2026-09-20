@@ -2658,3 +2658,19 @@ myButton1.addEventListener("click", event=>{
 });  */
 
 //============================================================================================================//
+
+//------Node List-----
+
+//Node List = Static collection of HTML elements by (id, class, element) 
+//            can be created by using querySelectorAll()
+//            similar to an array, but no (map, filter, reduce) have forEach
+//            NodeList won't update to automically reflects changes
+
+let buttons = document.querySelectorAll(".mybutton");
+
+// ADD HTML/CSS PROPERTIES //
+
+buttons.forEach(button => {
+  button.style.backgroundColor = "brown";
+  button.textContent += "😉";
+});
