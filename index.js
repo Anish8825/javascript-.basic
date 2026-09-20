@@ -2674,3 +2674,11 @@ buttons.forEach(button => {
   button.style.backgroundColor = "brown";
   button.textContent += "😉";
 });
+
+//CLICK event listener
+
+buttons.forEach(button =>{
+  button.addEventListener("click", event => {
+    event.target.style.backgroundColor = "white";
+  })
+});
