@@ -2734,7 +2734,7 @@ buttons.forEach(button => {
 // replace(oldclass, newclass)
 // contains()
 
-const mybutton = document.getElementById("mybutton");
+//const mybutton = document.getElementById("mybutton");
 /*
 mybutton.classList.add("enabled");
 mybutton.classList.remove("enabled");
@@ -2766,7 +2766,7 @@ mybutton.classList.add("enabled");
 mybutton.addEventListener("click", event=>{
   event.target.classList.replace("enabled","disabled");
 }); */
-
+/*
 mybutton.classList.add("enabled");
 
 mybutton.addEventListener("click",event=>{
@@ -2778,3 +2778,42 @@ mybutton.addEventListener("click",event=>{
     event.target.classList.replace("enabled","disabled");
   }
 });
+*/
+//EXAMPLE:
+
+let buttons = document.querySelectorAll(".mybutton");
+
+buttons.forEach(button => {
+  button.classList.add("enabled");
+});
+
+buttons.forEach(button => {
+  button.addEventListener("mouseover", event=>{
+    event.target.classList.toggle("hover");
+  })
+});
+
+buttons.forEach(button => {
+  button.addEventListener("mouseout", event=>{
+    event.target.classList.toggle("hover");
+  })
+});
+
+buttons.forEach(button => {
+  button.addEventListener("click",event=>{
+    
+    
+    if(event.target.classList.contains("disabled")){
+      event.target.textContent = "WHY BRO";
+    }
+    else{
+      event.target.classList.replace("enabled","disabled");
+    }
+  }
+
+  ) 
+})
+
+
+//======================================================================================//
+
