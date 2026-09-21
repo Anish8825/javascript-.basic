@@ -2741,3 +2741,13 @@ mybutton.classList.remove("enabled");
 
 mybutton.classList.add("hover");
 mybutton.classList.remove("hover");
+
+mybutton.addEventListener("mouseover", event=> {
+  event.target.classList.add("hover");
+  event.target.classList.add("enabled");
+});
+
+mybutton.addEventListener("mouseout", event=>{
+  event.target.classList.remove("hover");
+  event.target.classList.remove("hover");
+})

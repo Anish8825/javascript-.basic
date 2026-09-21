@@ -287,6 +287,6 @@ button:active{
 }
 
 .hover{
-    box-shadow: rgb(77, 73, 73);
+    box-shadow: rgb(16, 14, 14);
     font-weight: bold;
 }
