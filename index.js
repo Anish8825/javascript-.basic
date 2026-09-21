@@ -2735,7 +2735,7 @@ buttons.forEach(button => {
 // contains()
 
 const mybutton = document.getElementById("mybutton");
-
+/*
 mybutton.classList.add("enabled");
 mybutton.classList.remove("enabled");
 
@@ -2760,4 +2760,21 @@ mybutton.addEventListener("mouseover", event=>{
 mybutton.addEventListener("mouseout", event=>{
   event.target.classList.toggle("hover");
   event.target.classList.toggle("enabled");
-})
+});
+
+mybutton.classList.add("enabled");
+mybutton.addEventListener("click", event=>{
+  event.target.classList.replace("enabled","disabled");
+}); */
+
+mybutton.classList.add("enabled");
+
+mybutton.addEventListener("click",event=>{
+  
+  if(event.target.classList.contains("disabled")){
+    event.target.textContent = "💢😡"
+  }
+  else{
+    event.target.classList.replace("enabled","disabled");
+  }
+});

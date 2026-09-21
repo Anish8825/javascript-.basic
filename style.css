@@ -290,3 +290,7 @@ button:active{
     box-shadow: rgb(16, 14, 14);
     font-weight: bold;
 }
+.disabled{
+    background-color: rgb(110, 162, 207);
+    color: gray;
+}
