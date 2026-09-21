@@ -2749,5 +2749,15 @@ mybutton.addEventListener("mouseover", event=> {
 
 mybutton.addEventListener("mouseout", event=>{
   event.target.classList.remove("hover");
-  event.target.classList.remove("hover");
+  event.target.classList.remove("enabled");
+});
+
+mybutton.addEventListener("mouseover", event=>{
+  event.target.classList.toggle("hover");
+  event.target.classList.toggle("enabled");
+});
+
+mybutton.addEventListener("mouseout", event=>{
+  event.target.classList.toggle("hover");
+  event.target.classList.toggle("enabled");
 })
