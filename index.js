@@ -2665,7 +2665,7 @@ myButton1.addEventListener("click", event=>{
 //            can be created by using querySelectorAll()
 //            similar to an array, but no (map, filter, reduce) have forEach
 //            NodeList won't update to automically reflects changes
-
+/*
 let buttons = document.querySelectorAll(".mybutton");
 
 // ADD HTML/CSS PROPERTIES //
@@ -2719,6 +2719,7 @@ buttons.forEach(button => {
     console.log(buttons);
   });
 });
+*/
 
 //=========================================================================================================//
 
@@ -2732,3 +2733,11 @@ buttons.forEach(button => {
 // toggle(Remove if present, add if not)
 // replace(oldclass, newclass)
 // contains()
+
+const mybutton = document.getElementById("mybutton");
+
+mybutton.classList.add("enabled");
+mybutton.classList.remove("enabled");
+
+mybutton.classList.add("hover");
+mybutton.classList.remove("hover");

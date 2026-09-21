@@ -259,7 +259,7 @@ button:active{
 //========================================================================================*/
 
 /*------ Node List -----*/
-
+/*
 .mybutton{
     font-size: 4rem;
     margin: 10px;
@@ -268,4 +268,25 @@ button:active{
     padding: 10px 15px;
     background-color: rgb(58, 166, 228);
     color: rgb(232, 243, 118);
+}
+*/
+
+/*=========================================================================================*/
+
+#mybutton{
+    font-size: 4rem;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+
+}
+.enabled{
+    background-color: rgb(14, 104, 104);
+    color: rgb(128, 198, 198);
+}
+
+.hover{
+    box-shadow: rgb(77, 73, 73);
+    font-weight: bold;
 }
