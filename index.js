@@ -2836,11 +2836,17 @@ function playgame(playerchoice){
   else{
     switch(playerchoice){
       case "rock":
-        (computerchoice === "scissor") ? "YOU WIN!" : "YOU LOSE!";
+        result = (computerchoice === "scissor") ? "YOU WIN!" : "YOU LOSE!";
+        break;
       case "paper":
-        (computerchoice === "rock") ? "YOU WIN!" : "YOU LOSE!";
+        result = (computerchoice === "rock") ? "YOU WIN!" : "YOU LOSE!";
+        break;
       case "scissor":
-        (computerchoice === "paper") ? "YOU WIN" : "YOU LOSE";
+        result = (computerchoice === "paper") ? "YOU WIN" : "YOU LOSE!";
+        break;
     }
   }
+  playerdisplay.textContent = `PLAYER ${playerchoice}`;
+  playerchoice.textContent = `COMPUTER: ${computerchoice}`;
+  resultdisplay.textContent = result;
 }
