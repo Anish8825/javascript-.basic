@@ -334,3 +334,13 @@ h1{
     font-size: 5rem;
     margin: 30px 0;
 }
+.scoredisplay{
+    font-size: 2rem;
+
+}
+.greentext, #playerscoredisplay{
+    color: rgb(101, 242, 101);
+}
+.redtext, #computerscoredisplay{
+    color: rgb(236, 48, 48);
+}
