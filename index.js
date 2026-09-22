@@ -2824,3 +2824,23 @@ const playerdisplay = document.getElementById("playerdisplay");
 const computerdisplay = document.getElementById("computerdisplay");
 const resultdisplay = document.getElementById("resultdisplay");
 
+function playgame(playerchoice){
+
+  const computerchoice = choices[Math.floor(Math.random() * 3)];
+
+  let result = "";
+
+  if(playerchoice === computerchoice){
+     result = "IT IS TIE!";
+  }
+  else{
+    switch(playerchoice){
+      case "rock":
+        (computerchoice === "scissor") ? "YOU WIN!" : "YOU LOSE!";
+      case "paper":
+        (computerchoice === "rock") ? "YOU WIN!" : "YOU LOSE!";
+      case "scissor":
+        (computerchoice === "paper") ? "YOU WIN" : "YOU LOSE";
+    }
+  }
+}
