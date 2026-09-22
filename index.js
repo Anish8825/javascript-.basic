@@ -2818,7 +2818,7 @@ buttons.forEach(button => {
 //======================================================================================//
 
 //------Rock paper scissor------//
-
+/*
 const choices = ["rock","paper","scissor"];
 const playerdisplay = document.getElementById("playerdisplay");
 const computerdisplay = document.getElementById("computerdisplay");
@@ -2871,3 +2871,5 @@ function playgame(playerchoice){
       break;
   }
 }
+*/
+//======================================================================================//
