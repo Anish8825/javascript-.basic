@@ -345,3 +345,16 @@ h1{
     color: rgb(236, 48, 48);
 }
 */
+
+/*==========================================================================================================*/
+
+.slider{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+.slider img{
+    width: 100%;
+    display: none;
+}
