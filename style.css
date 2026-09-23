@@ -358,3 +358,6 @@ h1{
     width: 100%;
     display: none;
 }
+img.displayslide{
+    display: block;
+}

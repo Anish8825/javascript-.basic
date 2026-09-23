@@ -2875,3 +2875,35 @@ function playgame(playerchoice){
 //======================================================================================//
 
 //-----image sliders-----//
+
+const slides = document.querySelectorAll(".slides img");
+
+let slideindex = 0;
+let intervalId = null;
+
+initializeSlider();
+
+function initializeSlider(){
+
+  if(slides.length > 0){
+    slides[slideindex].classList.add("displayslide");
+    intervalId = setInterval(nextSLide, 5000);
+}
+}
+
+function showSlide(index){
+
+  slides.forEach(slide => {
+    slide.classList.remove("displayslide");
+  });
+  slides[slideindex].classList.add("displayslide");
+}
+
+function prevSlide(){
+
+}
+
+function nextSLide(){
+  slideindex++;
+  showSlide(slideindex);
+}
