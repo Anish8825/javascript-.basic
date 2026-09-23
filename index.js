@@ -2780,7 +2780,7 @@ mybutton.addEventListener("click",event=>{
 });
 */
 //EXAMPLE:
-
+/*
 let buttons = document.querySelectorAll(".mybutton");
 
 buttons.forEach(button => {
@@ -2813,7 +2813,7 @@ buttons.forEach(button => {
 
   ) 
 })
-
+*/
 
 //======================================================================================//
 
@@ -2875,7 +2875,7 @@ function playgame(playerchoice){
 //======================================================================================//
 
 //-----image sliders-----//
-
+/*
 const slides = document.querySelectorAll(".slides img");
 
 let slideindex = 0;
@@ -2917,3 +2917,6 @@ function nextSLide(){
   slideindex++;
   showSlide(slideindex);
 }
+*/
+
+//=================================================================================================//
