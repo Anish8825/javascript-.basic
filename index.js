@@ -2887,11 +2887,18 @@ function initializeSlider(){
 
   if(slides.length > 0){
     slides[slideindex].classList.add("displayslide");
-    intervalId = setInterval(nextSLide, 5000);
+    intervalId = setInterval(nextSLide, 500);
 }
 }
 
 function showSlide(index){
+
+  if(index >= slideindex.length){
+    slideindex = 0;
+  }
+  else if(index < 0){
+    slideindex = slide.lenth - 1;
+  }
 
   slides.forEach(slide => {
     slide.classList.remove("displayslide");
@@ -2900,6 +2907,9 @@ function showSlide(index){
 }
 
 function prevSlide(){
+  clearInterval(intervalId);
+  slideindex--;
+  showSlide(slideindex);
 
 }
 

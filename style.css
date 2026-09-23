@@ -360,4 +360,27 @@ h1{
 }
 img.displayslide{
     display: block;
+    animation-name: fade;
+    animation-duration: 1.5s ;
+    height: min-content;
+}
+.slide button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    background-color: antiquewhite;
+    color: rgb(119, 99, 99);
+    border: none;
+    cursor: pointer;
+}
+.previous{
+    left: 0;
+}
+.next{
+    right: 0;
+}
+@keyframes fade {
+    from {opacity: .5}
+    to {opacity: 1}
 }
